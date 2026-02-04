@@ -6,13 +6,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Endereço",
-    content: "Rua das Flores, 123 - Sala 45",
+    content: "Rua Julita Nogueira Soares, 690 - loja 10",
     subtitle: "Belo Horizonte - MG",
   },
   {
     icon: Phone,
     title: "Telefone",
-    content: "(31) 99999-9999",
+    content: "(31) 99750-8668",
     subtitle: "WhatsApp disponível",
   },
   {
@@ -31,7 +31,8 @@ const contactInfo = [
 ];
 
 export function Contact() {
-  const whatsappLink = "https://wa.me/5531999999999?text=Olá! Gostaria de agendar uma consulta.";
+  const whatsappLink =
+    "https://wa.me/5531999999999?text=Olá! Gostaria de agendar uma consulta.";
 
   return (
     <section id="contato" className="section-padding bg-secondary/30">
@@ -45,7 +46,8 @@ export function Contact() {
             Entre em Contato
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Estamos prontos para atender você. Agende sua consulta ou tire suas dúvidas.
+            Estamos prontos para atender você. Agende sua consulta ou tire suas
+            dúvidas.
           </p>
         </div>
 
@@ -107,7 +109,7 @@ export function Contact() {
           {/* Map Placeholder */}
           <div className="rounded-2xl overflow-hidden border border-border shadow-card bg-muted h-[300px] lg:h-full min-h-[300px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8888147252!2d-43.9386!3d-19.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU1JzAwLjEiUyA0M8KwNTYnMTkuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3031286875907!2d-44.00824302391465!3d-19.869418081505454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6916988237137%3A0x696beaadd71096e2!2sR.%20Julita%20Nogueira%20Soares%2C%20690%20-%20Santa%20Terezinha%2C%20Belo%20Horizonte%20-%20MG%2C%2031360-040!5e0!3m2!1spt-BR!2sbr!4v1770248812260!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
