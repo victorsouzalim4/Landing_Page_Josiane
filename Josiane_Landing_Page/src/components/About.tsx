@@ -1,10 +1,11 @@
 import { Award, Heart, Users, Clock } from "lucide-react";
-import portraitImage from "@/assets/physio-portrait.jpg";
+import profilePic from "@/assets/profilePic.jpeg"
+
 
 const stats = [
-  { icon: Clock, label: "Anos de Experiência", value: "10+" },
-  { icon: Users, label: "Pacientes Atendidos", value: "2000+" },
-  { icon: Award, label: "Especialização", value: "Ortopedia" },
+  { icon: Clock, label: "Anos de Experiência", value: String(new Date().getFullYear() - 2020) },
+  { icon: Users, label: "Pacientes Atendidos", value: "1000+" },
+  { icon: Award, label: "Especialização", value: "Tratamento da Dor" },
   { icon: Heart, label: "Satisfação", value: "98%" },
 ];
 
@@ -18,9 +19,9 @@ export function About() {
             <div className="absolute -inset-4 bg-accent rounded-3xl transform -rotate-3" />
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src={portraitImage}
+                src={profilePic}
                 alt="Dra. Josiane - Fisioterapeuta"
-                className="w-full aspect-square object-cover"
+                className="w-full aspect-square object-cover object-top"
               />
             </div>
             {/* Floating Card */}
@@ -31,7 +32,9 @@ export function About() {
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-foreground">CREFITO</p>
-                  <p className="text-sm text-muted-foreground">Profissional Certificada</p>
+                  <p className="text-sm text-muted-foreground">
+                    Profissional Certificada
+                  </p>
                 </div>
               </div>
             </div>
@@ -43,18 +46,19 @@ export function About() {
               Sobre a Profissional
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Dra. Josiane Soares
+              Dra. Josiane Souza
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Com mais de 10 anos de experiência, sou especializada em fisioterapia 
-              ortopédica e traumatológica. Minha missão é proporcionar tratamentos 
-              personalizados que não apenas aliviam a dor, mas restauram a qualidade 
-              de vida dos meus pacientes.
+              Sou fisioterapeuta especializada no tratamento da dor, com atuação
+              focada em terapias manuais avançadas, reabilitação funcional e
+              recuperação do movimento.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Formada pela Universidade Federal de Minas Gerais, com especialização 
-              em RPG e Pilates Clínico. Busco constantemente atualização profissional 
-              para oferecer os melhores tratamentos disponíveis.
+              Meu trabalho é direcionado a pessoas que já tentaram outros
+              tratamentos, convivem com dor crônica ou limitações físicas e
+              buscam alívio real, funcional e duradouro. Atendo de forma
+              individualizada, com escuta ativa, avaliação criteriosa e técnicas
+              baseadas em evidência científica.
             </p>
 
             {/* Stats Grid */}
@@ -65,7 +69,9 @@ export function About() {
                   className="bg-secondary rounded-xl p-4 text-center"
                 >
                   <stat.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-2xl font-bold text-foreground">{stat.value}</p>
+                  <p className="text-2xl font-bold text-foreground">
+                    {stat.value}
+                  </p>
                   <p className="text-sm text-muted-foreground">{stat.label}</p>
                 </div>
               ))}
