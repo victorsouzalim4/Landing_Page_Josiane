@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-physio.jpg";
 
 const benefits = [
-  "Avaliação Gratuita",
+  "Atendimento Humanizado",
   "Ambiente Climatizado",
 ];
 
