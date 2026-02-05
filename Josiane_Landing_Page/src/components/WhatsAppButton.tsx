@@ -1,8 +1,11 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { celular} from "@/info";
 
 export function WhatsAppButton() {
-  const whatsappLink = "https://wa.me/5531999999999?text=Olá! Gostaria de agendar uma consulta.";
+  const whatsappLink =
+  `https://wa.me/${celular}?text=Olá! Gostaria de agendar uma consulta.`
+    ;
 
   return (
     <Button

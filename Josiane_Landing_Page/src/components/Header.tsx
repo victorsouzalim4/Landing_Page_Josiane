@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X, Calendar, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { celular } from "@/info";
+import { MessageCircle } from "lucide-react";
 
 const navLinks = [
   { name: "Início", href: "#inicio" },
@@ -13,7 +15,7 @@ const navLinks = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const whatsappLink = `https://wa.me/${celular}?text=Olá! Gostaria de agendar uma consulta.`;
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border/50">
       <div className="container flex h-16 md:h-20 items-center justify-between">
@@ -23,8 +25,12 @@ export function Header() {
             <Activity className="w-5 h-5 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-bold text-foreground leading-tight">Dra. Josiane</span>
-            <span className="text-xs text-muted-foreground leading-tight">Fisioterapeuta</span>
+            <span className="text-lg font-bold text-foreground leading-tight">
+              Dra. Josiane
+            </span>
+            <span className="text-xs text-muted-foreground leading-tight">
+              Fisioterapeuta
+            </span>
           </div>
         </a>
 
@@ -45,7 +51,9 @@ export function Header() {
         <div className="hidden md:block">
           <Button className="gap-2 rounded-xl shadow-soft">
             <Calendar className="w-4 h-4" />
-            Agendar
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Agendar
+            </a>
           </Button>
         </div>
 
@@ -73,7 +81,13 @@ export function Header() {
               </nav>
               <Button className="gap-2 rounded-xl w-full shadow-soft mt-4">
                 <Calendar className="w-4 h-4" />
-                Agendar Consulta
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Agendar Consulta
+                </a>
               </Button>
             </div>
           </SheetContent>

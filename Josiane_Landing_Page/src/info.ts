@@ -1,0 +1,1 @@
+export const celular = "5531997508668"

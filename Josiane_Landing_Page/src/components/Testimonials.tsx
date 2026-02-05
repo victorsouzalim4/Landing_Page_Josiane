@@ -3,24 +3,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Maria Santos",
-    role: "Paciente há 2 anos",
+    name: "Miguel A. Faria",
     content:
-      "Depois de meses com dor nas costas, finalmente encontrei alívio com a Dra. Josiane. Seu tratamento personalizado mudou minha qualidade de vida.",
+      "Após as sessões com a Josiane, senti um alívio já no primeiro atendimento e, ao longo das semanas, minha movimentação melhorou muito. Hoje consigo trabalhar e dormir sem dor",
     rating: 5,
   },
   {
-    name: "João Oliveira",
-    role: "Paciente há 1 ano",
+    name: "Raissa Gomes Lisboa",
     content:
-      "Excelente profissional! A drenagem linfática ajudou muito na minha recuperação pós-cirúrgica. Recomendo de olhos fechados.",
+      "Sofria com dor cervical há anos, tensão no pescoço e dor de cabeça frequente. O atendimento foi extremamente cuidadoso, explicativo. A cada sessão sentia meu corpo mais solto.",
     rating: 5,
-  },  
+  },
   {
-    name: "Ana Paula Lima",
-    role: "Paciente há 6 meses",
+    name: "Maria Amélia Carvalho",
     content:
-      "Ambiente acolhedor e atendimento humanizado. A Dra. Josiane realmente se importa com seus pacientes. Resultados incríveis!",
+      "Eu não percebia o quanto meu corpo estava sobrecarregado até começar o tratamento. As dores musculares diminuíram muito, principalmente nas costas e no pescoço",
     rating: 5,
   },
 ];
@@ -80,9 +77,6 @@ export function Testimonials() {
                   <div>
                     <p className="font-semibold text-foreground text-sm">
                       {testimonial.name}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {testimonial.role}
                     </p>
                   </div>
                 </div>

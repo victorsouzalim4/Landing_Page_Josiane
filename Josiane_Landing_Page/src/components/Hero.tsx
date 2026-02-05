@@ -21,7 +21,7 @@ export function Hero() {
               <span className="text-gradient">viva sem dor.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Fisioterapeuta é complir com o movimento. Irra desse da possente eou oo cominiento interotamente oimamenito.
+              Transformando a dor em movimento e o movimento em liberdade para a sua melhor versão.
             </p>
 
             {/* CTA Buttons */}

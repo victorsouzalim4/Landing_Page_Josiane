@@ -6,7 +6,7 @@ const services = [
     icon: Hand,
     title: "Massagem Terapêutica",
     description:
-      "Massagem terapêutica é amoa um tem coromanidade que ache a uaenunomento e anbranção gratuito.",
+      "Conjunto de manobras manuais intensas que visam a reabilitação de tecidos, o alívio de dores crônicas e a correção de disfunções musculares.",
     color: "bg-primary/10",
     iconColor: "text-primary",
   },
@@ -14,7 +14,7 @@ const services = [
     icon: Droplets,
     title: "Drenagem Linfática",
     description:
-      "Drenagem linfática e sem consesentuatica linfática. Da que más pertrsorendo e preferênciar de condusto.",
+      "Técnica de pressões suaves e ritmadas que direciona o excesso de líquidos para os gânglios, combatendo o inchaço e acelerando a desintoxicação.",
     color: "bg-sage-100",
     iconColor: "text-sage-600",
   },
@@ -22,7 +22,7 @@ const services = [
     icon: Layers,
     title: "Liberação Miofascial",
     description:
-      "Liberação Miofascial é sotuva embrane prototo comenha, inofous searcoma e comfortamento nu sita súsica.",
+      "Aplicação de pressão ou deslizamento sobre o tecido conjuntivo (fáscia) para eliminar pontos de gatilho, restaurar a elasticidade e melhorar a performance.",
     color: "bg-accent",
     iconColor: "text-accent-foreground",
   },

@@ -1,6 +1,7 @@
 import { MapPin, Phone, Instagram, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { celular } from "@/info";
 
 const contactInfo = [
   {
@@ -18,9 +19,9 @@ const contactInfo = [
   {
     icon: Instagram,
     title: "Instagram",
-    content: "@dra.josianesoares",
+    content: "@josycsouza",
     subtitle: "Siga-nos",
-    link: "https://instagram.com/dra.josianesoares",
+    link: "https://www.instagram.com/_josycsouza/",
   },
   {
     icon: Clock,
@@ -30,9 +31,11 @@ const contactInfo = [
   },
 ];
 
+
 export function Contact() {
   const whatsappLink =
-    "https://wa.me/5531999999999?text=Olá! Gostaria de agendar uma consulta.";
+  `https://wa.me/${celular}?text=Olá! Gostaria de agendar uma consulta.`
+    ;
 
   return (
     <section id="contato" className="section-padding bg-secondary/30">
