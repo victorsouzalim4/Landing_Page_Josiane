@@ -1,20 +1,20 @@
-import { Hand, Droplets, Layers, ArrowRight } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Hand, Layers, ArrowRight, Activity } from "lucide-react";
+import {  } from 'lucide-react';import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
     icon: Hand,
-    title: "Massagem Terapêutica",
+    title: "Terapia Manual Avançada",
     description:
       "Conjunto de manobras manuais intensas que visam a reabilitação de tecidos, o alívio de dores crônicas e a correção de disfunções musculares.",
     color: "bg-primary/10",
     iconColor: "text-primary",
   },
   {
-    icon: Droplets,
-    title: "Drenagem Linfática",
+    icon: Activity,
+    title: "Quiropraxia",
     description:
-      "Técnica de pressões suaves e ritmadas que direciona o excesso de líquidos para os gânglios, combatendo o inchaço e acelerando a desintoxicação.",
+      "Especialidade focada no alinhamento da coluna vertebral através de ajustes manuais, visando recuperar a mobilidade e o equilíbrio do sistema nervoso.",
     color: "bg-sage-100",
     iconColor: "text-sage-600",
   },
