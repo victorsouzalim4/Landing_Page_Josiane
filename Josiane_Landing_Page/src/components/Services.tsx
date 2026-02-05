@@ -12,7 +12,7 @@ const services = [
   },
   {
     icon: Activity,
-    title: "Quiropraxia",
+    title: "Quiropraxia Clínica",
     description:
       "Especialidade focada no alinhamento da coluna vertebral através de ajustes manuais, visando recuperar a mobilidade e o equilíbrio do sistema nervoso.",
     color: "bg-sage-100",
